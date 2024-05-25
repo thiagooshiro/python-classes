@@ -9,7 +9,7 @@
 ###
 
 
-# 4 - Uma empresa de automóveis está criando um sistema para cadastrar novos veículos, crie um algoritmo capaz de registrar novos veículos a partir de entradas fornecidas pelo usuário. As informações necessárias são: Modelo, ano, descrição, valor de entrada, valor de parcela e valor total. O valor de entrada é sempre 12% do valor total do veículo e o número máximo de parcelas é sempra até 18 parcelas do valor restante.
+# 4 - Uma empresa de automóveis está criando um sistema para cadastrar novos veículos, crie um algoritmo capaz de registrar novos veículos a partir de entradas fornecidas pelo usuário. As informações necessárias são: Modelo, ano, descrição, valor de entrada, valor de parcela e valor total. O valor de entrada é sempre 12% do valor total do veículo e o número máximo de parcelas é sempra té 18 parcelas do valor restante.
 
 
 
@@ -109,6 +109,3 @@ registros_alunos = [
 # ex8 = ["Maria", 23, "India", False, "07/12/2024"]
 # ex9 = ["Pedro", "42", "Br4sil", True, "05/05/2024"]
 # ex10 = ["Tom", 33, "Servolo", False, "02/05/1998"]
-
-
-# 4tyrXkQb
