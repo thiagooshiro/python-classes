@@ -1,4 +1,6 @@
 
+from auxiliar import adicionar_tarefas, ver_tarefas
+
 lista_tarefas = []
 def main():
     print('Bem vindo, à Lista de Tarefas1')
@@ -9,36 +11,13 @@ def main():
 
     num = int(input('Escolha uma opção'))
     if num == 1:
-        adicionar_tarefas()
+        adicionar_tarefas(lista_tarefas, main)
     elif num == 2:
-        ver_tarefas()
+        ver_tarefas(lista_tarefas, main)
     else:
         pass
 
 
-def adicionar_tarefas():
-    nome_tarefa = input('Qual a tarefa a ser realizada?')
-    categoria = input('Qual categoria da tarefa')
-    urgencia = input('Qual urgencia')
-    realizada = False
-    tarefa = {
-        'nome da tarefa': nome_tarefa,
-        'categoria': categoria,
-        'urgencia': urgencia,
-        'realizada': realizada
-    }
-    lista_tarefas.append(tarefa)
-    main()
-
-def ver_tarefas():
-    for tarefa in lista_tarefas:
-        print('-'*10)
-        print('Nome da Tarefa: ', tarefa['nome da tarefa'])
-        print('Categoria: ', tarefa['categoria'])
-        print('Urgencia: ', tarefa['urgencia'])
-        print('Realizada: ', tarefa['realizada'])
-        print('-'*10)
-    main()
 
 
 main()

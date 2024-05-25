@@ -14,11 +14,13 @@ tree_view['columns'] = ('nome', 'email')
 
 tree_view.column('#0', width=100, minwidth=100, anchor='center')
 tree_view.column('nome', width=150, minwidth=150, anchor='center')
-# tree_view.column('email', width=150, minwidth=150, anchor='center')
+tree_view.column('email', width=150, minwidth=150, anchor='center')
 
 tree_view.heading('#0', text='ID')
 tree_view.heading('nome', text='NOME')
-# tree_view.heading('email', text='EMAIL')
+tree_view.heading('email', text='EMAIL')
+
+tree_view.insert("", END, text="1", values=('Walter', 'walter@email.com')) # Sintaxe pra adicionar uma informação.
 
 
 
