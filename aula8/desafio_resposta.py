@@ -28,6 +28,3 @@ if matching_products:
         print(product)
 else:
     print("No products found matching the search query.")
-=======
-
->>>>>>> b2ec8ad03236e761f410b82e6c67c4b6e25f8c9b
