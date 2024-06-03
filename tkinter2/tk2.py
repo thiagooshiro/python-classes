@@ -29,8 +29,8 @@ tree_view.heading('telefone', text='TEL')
 
 label_name = Label(janela, text='Digite seu nome')
 entry_name = Entry(janela, width=100)
-entry_name.pack()
 label_name.pack()
+entry_name.pack()
 
 label_email = Label(janela, text='Digite seu email')
 entry_email = Entry(janela, width=100)
@@ -41,11 +41,11 @@ def add_people():
     name = entry_name.get()
     email = entry_email.get()
     id = len(tree_view.get_children())
-    last_id = (tree_view.get_children()[-1])
-    item =  tree_view.insert('', END, text=id+1, values=(name, email, '123'))
-    last_value = tree_view.index(last_id)
-    item2 = tree_view.item(last_id)
-    tree_view.move(item, "", last_value) # troca a ordem do penultimo valor com o último valor adicionado na lista.
+    # last_id = (tree_view.get_children()[-1])
+    tree_view.insert('', END, text=id+1, values=(name, email, '123'))
+    # last_value = tree_view.index(last_id)
+    # item2 = tree_view.item(last_id)
+    # tree_view.move(item, "", last_value) # troca a ordem do penultimo valor com o último valor adicionado na lista.
 
 
 
