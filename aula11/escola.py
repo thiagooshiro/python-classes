@@ -1,6 +1,6 @@
 class Aluno():
      
-    def __init__(self, nome, idade, ano, matricula) -> None:
+    def __init__(self, nome, idade,matricula, ano=None) -> None:
         self.nome = nome
         self.idade = idade
         self.ano = ano
@@ -69,13 +69,13 @@ class Escola():
 
 # 4 - Lance notas (pelo menos 3) de cada materia para cada aluno matriculado.
 
-escola = Escola('Ab', 'ba', 'b')
+# escola = Escola('Ab', 'ba', 'b')
 
-escola.matricular()
-escola.matricular()
-print(escola.get_matriculados())
-print(escola.matriculados[0].gritar())
+# escola.matricular()
+# escola.matricular()
+# print(escola.get_matriculados())
+# print(escola.matriculados[0].gritar())
 
 
-escola2 = Escola('Ba', 'ba', 'b')
-print(escola2.get_matriculados(), 'bobiei')
+# escola2 = Escola('Ba', 'ba', 'b')
+# print(escola2.get_matriculados(), 'bobiei')

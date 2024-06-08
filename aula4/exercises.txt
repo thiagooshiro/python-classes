@@ -1,0 +1,28 @@
+Criar um Dicionário:
+
+1 - Crie um dicionário chamado estudante com as chaves: "nome", "idade" e "cursos". Atribua valores à sua escolha para essas chaves.
+Acessar Valores:
+
+2 - Dado o dicionário estudante = {"nome": "João", "idade": 21, "cursos": ["Matemática", "Ciência da Computação"]}, escreva um programa para imprimir o valor associado à chave "nome".
+Adicionar um Par Chave-Valor:
+
+3 - Adicione um novo par chave-valor ao dicionário estudante. A nova chave deve ser "nota" e o valor deve ser "A".
+Atualizar Valores:
+
+4 - Atualize o valor de "idade" no dicionário estudante para 22.
+Excluir um Par Chave-Valor:
+
+5 - Remova a chave "cursos" do dicionário estudante.
+
+
+6 - Escreva um programa que itere sobre o dicionário estudante e imprima cada chave e seu valor correspondente.
+
+
+7 - Use o método get para recuperar o valor da chave "nome" do dicionário estudante. Se a chave não existir, retorne "Chave não encontrada".
+Verificar Existência de Chave:
+
+8 - Escreva um programa que verifica se a chave "nota" existe no dicionário estudante. Imprima uma mensagem apropriada com base no resultado.
+Mesclar Dicionários:
+
+9 - Dado dois dicionários, dict1 = {"a": 1, "b": 2} e dict2 = {"b": 3, "c": 4}, mescle dict2 em dict1 e imprima o dicionário resultante.
+Compreensão de Dicionário:
