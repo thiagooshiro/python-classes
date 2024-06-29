@@ -1,6 +1,6 @@
 class Aluno():
      
-    def __init__(self, nome, idade,matricula, ano=None) -> None:
+    def __init__(self, nome, matricula, ano, idade=None ) -> None:
         self.nome = nome
         self.idade = idade
         self.ano = ano
@@ -16,7 +16,7 @@ class Aluno():
 
 
 class Professor():
-    def __init__(self, nome, idade, salario, especialidade):
+    def __init__(self, nome, salario, especialidade, idade=None):
         self.nome = nome,
         self.idade = idade,
         self.salario = salario

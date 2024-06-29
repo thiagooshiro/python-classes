@@ -5,7 +5,7 @@
 
 # Nesse novo caso a chave "ano" corresponde ao ano de ingresso do aluno na instituição
 # A chave idade foi substituida pela chave data_nascimento
-from escola import Aluno
+from escola import Aluno, Professor, Escola
 
 alunos = [
     {"nome": "Maria", "data_nascimento": "10/05/2005", "ano": 2023, "matricula": "A123"},
@@ -30,14 +30,53 @@ professores = [
 
 
 class Aluno_Novo(Aluno):
-    def __init__(self, nome, idade, data_nascimento, matricula) -> None:
-        super().__init__(nome, idade, matricula=matricula)
+    def __init__(self, nome, data_nascimento, matricula, ano) -> None:
+        super().__init__(nome, matricula, ano)
         self.data_nascimento = data_nascimento
+        self.notas = {}
 
+
+class Professor_Novo(Professor):
+    def __init__(self, nome, salario, especialidade, data_nascimento):
+        super().__init__(nome, salario, especialidade)
+        self.data_nascimento = data_nascimento
+    
+    def dar_nota():
+        pass
+    
+
+class Escola_Nova(Escola):
+    def __init__(self, nome, endereco, segmento):
+        super().__init__(nome, endereco, segmento)
+        self.matriculados = []
+    
+    def matricular(self, lista_alunos):
+        for aluno in lista_alunos:
+            nome = aluno['nome']
+            data_nascimento = aluno['data_nascimento']
+            ano = aluno['ano']
+            matricula = aluno['matricula']
+            cadastro = Aluno_Novo(nome,data_nascimento,matricula,ano)
+            self.matriculados.append(cadastro)
+        
+        return self.ver_cadastros()
+            
+    
+    def cadastrar_professor(self):
+        pass
+
+
+    def ver_cadastros(self):
+        alunos = []
+        for item in self.matriculados:
+            alunos.append(str(item))
+        return alunos
 
 joao = Aluno_Novo('Joao', '36', '01/05/1988', 'B357')
 
-print(hasattr(Aluno, 'ano'))
+escola = Escola_Nova('Escola Batatinha', 'Rua Nada', 'Educação Mercenária')
+
+print(escola.matricular(alunos))
 
 
 
