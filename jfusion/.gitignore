@@ -1,0 +1,24 @@
+# Ambiente virtual
+venv/
+jfusionenv/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração da IDE
+.vscode/
+.idea/
+
+# Arquivos de compilação
+__pycache__/
+*.pyc
+
+# Arquivos de logs
+*.log
+
+# Arquivos de banco de dados
+*.sqlite3
+
+# Arquivos temporários
+tmp/
