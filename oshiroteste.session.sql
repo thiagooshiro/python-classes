@@ -1,0 +1,6 @@
+-- @block
+CREATE TABLE IF NOT EXISTS Escolas(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(200),
+    endereco VARCHAR(255)
+);

@@ -1,10 +1,12 @@
 from operacoes import soma, multiplicacao, divisao, subtracao
 
+
 def menu():
     print('Bem vindo a calculadora')
     print('Qual operação deseja executar?')
     print('1 - Soma', '2 - Subtração', '3 - Multilpicação', '4 - Divisão', '5 - Sair', sep='\n')
     oper = input('Escolha a operação: ')
+
 
     if oper == '5':
         return print('Tenha um bom dia!')
