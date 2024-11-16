@@ -46,7 +46,7 @@ INSERT INTO estudantes (nome, data_de_nascimento, matricula, ano) VALUES
 ('Julia Pereira', '2006-06-30', 'M010', 2021),
 ('Leonardo Martins', '2005-02-10', 'M011', 2020),
 ('Mariana Rocha', '2004-10-21', 'M012', 2019),
-('Nicolas Gomes', '2003-11-03', 'M013', 2018),
+('Rodrigo Gomes', '2003-11-03', 'M013', 2018),
 ('Olivia Santos', '2006-05-18', 'M014', 2021),
 ('Pedro Henrique Barros', '2004-07-09', 'M015', 2019),
 ('Quirino Andrade', '2005-09-14', 'M016', 2020),

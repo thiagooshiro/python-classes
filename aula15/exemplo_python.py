@@ -10,11 +10,11 @@ db_config = {
     'host': 'localhost',
     'database': 'school_management',
     'user': 'root',
-    'password': 'in12345678'
+    'password': 'In@12345678'
 }
 
 
-def insert_student(nome, data_de_nascimento, matricula, ano):
+def insert_student(nome, data_de_nascimento, matricula, ano_de_ingresso, id_escola):
     try:
         # Establish the connection
         connection = mysql.connector.connect(**db_config)
@@ -31,9 +31,9 @@ def insert_student(nome, data_de_nascimento, matricula, ano):
                     return
 
                 # SQL query to insert a new student
-                sql_insert_query = """INSERT INTO estudantes (nome, data_de_nascimento, matricula, ano)
-                                      VALUES (%s, %s, %s, %s)"""
-                record = (nome, data_de_nascimento, matricula, ano)
+                sql_insert_query = """INSERT INTO estudantes (nome, data_de_nascimento, matricula, ano_de_ingresso, id_escola)
+                                      VALUES (%s, %s, %s, %s, %s)"""
+                record = (nome, data_de_nascimento, matricula, ano_de_ingresso, id_escola)
 
                 # Execute the query
                 cursor.execute(sql_insert_query, record)
@@ -90,7 +90,7 @@ def get_student_by_matricula(matricula):
             connection.close()
 
 # Example usage for inserting a student
-insert_student('João da Silva', '2005-05-10', 'M021', 2020)
+insert_student('Maria da Silva', '2005-05-10', 'M021', 2020, 1)
 
 # Example usage for getting all students
 students = get_all_students()
