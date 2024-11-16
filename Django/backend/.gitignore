@@ -1,0 +1,79 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ambientes Virtuais
+.venv/
+venv/
+ENV/
+env.bak/
+env/
+
+# Configuração IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+
+# Logs
+*.log
+*.pot
+*.pyc
+*.mo
+*.pickle
+*.sublime-workspace
+
+# Configurações locais do Django
+local_settings.py
+
+# Arquivos estáticos e de mídia
+staticfiles/
+media/
+
+# Arquivos de banco de dados
+*.sqlite3
+
+# Arquivos de migração
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.swp
+*/migrations/*.swo
+
+# Arquivos do gerenciamento do Django
+db.sqlite3
+*.dump
+
+# Arquivos de coverage
+htmlcov/
+.coverage
+
+# Pytest
+.pytest_cache/
+test-report.xml
+
+# Arquivos do gerenciamento do ambiente virtual do Jupyter
+.ipynb_checkpoints
+
+# Arquivos de cache do Jupyter
+__pycache__/
+
+# Arquivos de pacote do Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos de configurações do sistema de controle de versão
+*.orig
+*.rej
