@@ -13,7 +13,7 @@ def adicionar_tarefas(lista_tarefas, main):
     main()
 
 
-def ver_tarefas(lista_tarefas, main):
+def ver_tarefas(lista_tarefas):
     for tarefa in lista_tarefas:
         print('-'*10)
         print('Nome da Tarefa: ', tarefa['nome da tarefa'])

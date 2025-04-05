@@ -1,6 +1,21 @@
 
 from auxiliar import adicionar_tarefas, ver_tarefas
 
+def adicionar_tarefas(lista_tarefas, main):
+    nome_tarefa = input('Qual a tarefa a ser realizada?')
+    categoria = input('Qual categoria da tarefa')
+    urgencia = input('Qual urgencia')
+    realizada = False
+    tarefa = {
+        'nome da tarefa': nome_tarefa,
+        'categoria': categoria,
+        'urgencia': urgencia,
+        'realizada': realizada
+    }
+    lista_tarefas.append(tarefa)
+    main()
+
+
 lista_tarefas = []
 def main():
     print('Bem vindo, à Lista de Tarefas1')
@@ -142,6 +157,6 @@ def main():
 
 
 
-
+adicionar_tarefas()
 
 main()

@@ -24,6 +24,10 @@ def soma_tudo(*args):
         result += num
     return result
 
+
+
+soma_tudo(1, 3, 5, 7, 29, 42, )
+
 # print(soma_tudo(2, 3, 4, 5, 19, 42, 27), 'abobora', sep='\n')
 # def mostrar_info(**kwargs):
 #     for chave, valor in kwargs.items():
@@ -64,3 +68,24 @@ produtos = ["aveia", "maçã", "uva", "abobora", "leite", "pão", "sabonete", "d
 maior = reduce(maiorstring, produtos)
 print(maior)
 
+
+
+def menu():
+    print('x')
+
+    escolha = input('Deseja continuar jogando?')
+    if escolha != 'n':
+        return menu()
+    
+    print('Obrigado por jogar nosso joguinho!')
+
+menu()
+
+
+while True:
+    print('Jogando jankenpo')
+
+    escolha = input('Deseja continuar?')
+    if escolha == 'n':
+        
+        break
