@@ -25,3 +25,19 @@ def listar_alunos():
     alunos = cursor.fetchall()
     conn.close()
     return alunos
+
+
+def listar_alunos_por_id(id):
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute('''
+        SELECT Alunos.id, Alunos.nome, Alunos.data_nascimento, Escolas.nome AS nome_escola
+        FROM Alunos
+        LEFT JOIN Escolas ON Alunos.id_escola = Escolas.id
+        WHERE id = ?
+    ''', (id,))
+
+    alunos = cursor.fetchone()
+    conn.close()
+    return alunos
