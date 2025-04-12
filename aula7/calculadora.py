@@ -45,3 +45,42 @@ def menu():
 
 
 menu()
+
+
+
+
+def menu():
+    print('Bem vindo a calculadora')
+    print('Qual operação deseja executar?')
+    print('1 - Soma', '2 - Subtração', '3 - Multilpicação', '4 - Divisão', '5 - Sair', sep='\n')
+    oper = input('Escolha a operação: ')
+
+    if oper == '1':
+        # Chamar função pra somar
+        pass #pass é só pra não quebrar o código, remova-o quando implementar sua lógica.
+    elif oper == '2':
+        # Chamar a função de subtrair
+        pass
+
+    elif oper == '3':
+        # Chamar função de multiplicar;
+        pass
+
+    elif oper == '4':
+        # Chamar operação de divisão;
+        pass
+    elif oper == '5':
+        # Encerrar o programa com mensagem amigável
+        pass
+    else:
+        # Escolha fora das escolhas disponíveis
+        # Exibir mensagem de erro!
+        pass
+
+
+# Regras:
+# As funções das operações devem estar em um arquivo separado chamado operacoes.py
+# O arquivo principal com código da função menu deve ser chamado calculadora.py
+# Para utilizar as infoções utiliza importação.
+
+
