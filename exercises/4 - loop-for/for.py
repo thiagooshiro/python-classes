@@ -26,10 +26,11 @@
 # Crie um algoritmo que ao receber essa lista imprima os itens que iniciam com a letra "a"
 
 
-# 6: Dada a seguinte lista:
-produtos = ["aveia", "maçã", "uva", "abobora", "leite", "pão", "sabonete", "desodorante", "amaciante", "chuveiro"]
-# Crie um algoritmo que ao receber essa lista imprima os itens que iniciam com a letra "a"
-
+#6: - Crie um algoritmo que ao receber duas listas:
+# cliente = ["João", "Daniel", "Larissa", "Mariana", "Julia", "Luana", "Gustavo", "Luiz"]
+# produto = ["molho de tomate", "cenoura", "macarrão", "salame", "lâmpada", "água sanitária", "refrigerante", "suco"]
+# Imprima os valores no seguinte formato:
+# O cliente {cliente} comprou este produto: {produto}
 
 # 7: Crie um algoritmo que ao receber uma lista imprima todos os itens que contenham uma letra determinada por você.
 

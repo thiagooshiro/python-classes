@@ -7,6 +7,7 @@ def menu():
     print('1 - Soma', '2 - Subtração', '3 - Multilpicação', '4 - Divisão', '5 - Sair', sep='\n')
     oper = input('Escolha a operação: ')
 
+    
 
     if oper == '5':
         return print('Tenha um bom dia!')
@@ -20,7 +21,7 @@ def menu():
         n2 = float(input('Digite o segundo valor'))
 
         if oper == '1':
-            print(soma(n1, n2))
+             print(soma(n1, n2))
         elif oper == '2':
             print(subtracao(n1, n2))
         elif oper == '3':
