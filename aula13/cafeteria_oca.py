@@ -44,62 +44,16 @@ class Cafeteria:
         return cliente
 
     def cadastrar_produto(self):
-        print("\n--- Cadastro de Produto ---")
-        produto_nome = input('Digite o nome do produto: ')
-        produto_preco = float(input('Digite o preço do produto: R$ '))
-        produto_tamanho = input('Digite o tamanho do produto (ex: pequeno, médio, grande): ')
-        produto_tipo = input('Digite o tipo do produto (ex: bebida, comida, sobremesa): ')
-
-        produto = Produto(produto_nome, produto_preco, produto_tamanho, produto_tipo)
-        self.produtos.append(produto)
-        print(f'Produto {produto_nome} cadastrado com sucesso!')
-        return produto
+       pass
 
     def registrar_pedido(self, cliente):
-        print("\n--- Registro de Pedido ---")
-        if not self.produtos:
-            print("Nenhum produto cadastrado! Primeiro cadastre os produtos.")
-            return
-        
-        print("Produtos disponíveis:")
-        for i, produto in enumerate(self.produtos, 1):
-            print(f"{i} - {produto}")
-
-        produto_escolhido = input("Digite o número do produto que deseja pedir: ")
-
-        try:
-            produto_index = int(produto_escolhido) - 1
-            if produto_index < 0 or produto_index >= len(self.produtos):
-                print("Produto inválido!")
-                return
-            produto = self.produtos[produto_index]
-            print(f"Pedido realizado com sucesso! Cliente: {cliente.nome} {cliente.sobrenome}")
-            print(f"Produto: {produto.nome} ({produto.tipo}, {produto.tamanho}) - R$ {produto.preco:.2f}")
-            return produto
-        except ValueError:
-            print("Opção inválida! Digite um número.")
-            return None
+        pass
 
     def listar_clientes(self):
-        if not self.clientes:
-            print("Nenhum cliente cadastrado.")
-        else:
-            print("\nClientes cadastrados:")
-            for cliente in self.clientes:
-                # Cada cliente será impresso com uma separação clara entre os dados
-                print("\n" + str(cliente))
-                print("-" * 40)  # Linha para separar cada cliente
-
-        return None
+        pass
 
     def listar_produtos(self):
-        if not self.produtos:
-            print("Nenhum produto cadastrado.")
-        else:
-            print("\nProdutos cadastrados:")
-            for produto in self.produtos:
-                print(produto)
-        return None
+        pass
 
 
 # Função do menu
